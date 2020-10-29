@@ -1,0 +1,36 @@
+@keyframes down {
+  from {
+  
+    transform: translateY(-150%);
+  }
+
+  to {
+ 
+    transform: translateY(0);
+  }
+}
+
+.animate-down {
+  animation-name: down;
+  animation-duration: 1s;
+  
+}
+
+@keyframes left {
+  from {
+  
+    transform: translateX(-150%);
+  }
+
+  to {
+  
+    transform: translateX(0);
+  }
+}
+
+.animate-left {
+  animation-name: left;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+

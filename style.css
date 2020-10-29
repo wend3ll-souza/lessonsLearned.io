@@ -1,0 +1,195 @@
+/**********  GERAL *************/
+* {
+  margin: 0;
+  text-decoration: none;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(253, 251, 251);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.box-color {
+  border-radius: 1rem;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.247);
+}
+
+.conteudoPosition {
+  top: 5rem;
+}
+
+
+
+
+
+/******* CABEÇALHO ************/
+header {
+  background-color: rgb(12, 11, 11);
+  box-shadow: 0 1px 6px 0 rgb(0, 0, 0);
+  font-family: '', sans-serif;
+  font-size: 20px;
+  width: 100%;
+  height: 2.7rem;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+
+}
+
+
+#image-header {
+  width: 40px;
+  height: 37px;
+  margin: .1rem;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+header h1 {
+  font-size: 30px;
+  color: rgb(200, 199, 199);
+  position: relative;
+  top: 4px;
+  right: -185px;
+  font-family: monospace;
+}
+
+header nav {
+  position: relative;
+  left: 35rem;
+}
+
+
+.web {
+  background-color: rgb(177, 177, 177);
+  width: 30px;
+  height: 30px;
+  margin: .1rem;
+  margin-left: 3rem;
+  cursor: pointer;
+  border-radius: 3rem;
+  padding: 5px;
+}
+
+.web:hover {
+  background-color: aliceblue;
+}
+
+
+
+
+
+/****************** COMPONENTES DO MEIO ***************/
+#artigo {
+  width: 35%;
+  padding: 3rem;
+  position: relative;
+  right: 3rem;
+
+}
+
+.artigo-text img {
+  width: 16px;
+}
+
+.artigo-text h3 {
+  margin-top: 2rem;
+  margin-right: 5rem;
+  width: 50%;
+  padding: 1rem;
+}
+
+#rodape {
+  width: 43%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  left: 338px;
+  bottom: -7rem;
+}
+
+#rodape img {
+  width: 77px;
+}
+
+
+
+
+
+
+/********** COMPONENTES DA DIREITA ************/
+#minha_foto {
+  border-radius: 6rem;
+}
+
+#sobreMim {
+  width: 176px;
+  height: 190px;
+  position: fixed;
+  right: 117px;
+  padding: 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.336);
+  display: flex;
+  align-items: center;
+}
+
+#tabela {
+  width: 276px;
+  height: 190px;
+  position: fixed;
+  bottom: 56px;
+  right: 122px;
+  font-size: 16px;
+  border: 1px dashed rgba(0, 0, 0, 0.267);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.247);
+}
+
+
+#tituloTabela {
+  background-color: rgb(32, 39, 37);
+  color: white;
+}
+
+.tabelaInfo {
+  background-color: #e6e5e5;
+}
+
+.tabelaInfo3 {
+  background-color: #e6e5e5;
+
+}
+
+.tituloMenu h2 {
+  color: rgb(6, 26, 31);
+  margin-bottom: .5rem;
+}
+
+
+
+
+
+/********** COMPONENTES DA ESQUERDA ************/
+#list {
+  padding: 16px;
+  width: 11rem;
+  height: 30rem;
+  position: fixed;
+  left: 7%;
+  font-size: 17px;
+}
+
+#licoes_aprendidas {
+  margin-bottom: .8rem;
+}
