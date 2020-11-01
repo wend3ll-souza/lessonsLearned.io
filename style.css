@@ -283,14 +283,16 @@ header nav a{
 
 /****************** Tabela ********************/
 #tabela {
-  width: 20%;
+  visibility: hidden;
+  width: 66%;
   height: 10%;
   position: absolute;
-  top: 208rem;
-  right: 183px;
+  top: 274rem;
+  right: 59px;
   font-size: 16px;
   border: 1px dashed rgba(0, 0, 0, 0.267);
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.247);
+
 }
 
 
@@ -343,6 +345,7 @@ header nav a{
 }
 
 #tabela {
+  visibility: hidden;
   width: 39%;
   height: 13rem;
   position: absolute;
@@ -405,6 +408,14 @@ header nav {
   width: 21%;
   position: relative;
   left: 0rem;
+}
+
+#rodape {
+    width: 50%;
+    height: 23rem;
+    position: relative;
+    left: 390px;
+    top: 46rem;
 }
 
 }
