@@ -21,30 +21,24 @@
         <link rel="manifest" href="img/site.webmanifest">
         <title>O que aprendi esse mês</title>
     </head>
+    <header id="cabecalho" class="animate-down">
+        <img
+            id="image-header"
+            onClick="history.go(0)"
+            src="./img/android-chrome-192x192.png"
+            alt="logo"
+        >
+        <h1 id="titulo">Lessons Learned</h1>
+    </header>
     <body>
-        <header id="cabecalho" class="animate-down">
-            <img
-                id="image-header"
-                onClick="history.go(0)"
-                src="./img/android-chrome-192x192.png"
-                alt="logo"
-            >
-            <h1 id="titulo">Lessons Learned</h1>
-            <nav>
-                <a title="GitHub" href="https://github.com/wend3ll-souza" target="_blank">
-                    <img class="web" src="./img/github-alt-brands.svg" alt="gitHub">
-                </a>
-                <a title="Behance" href="https://www.behance.net/wend3llsouza" target="_blank">
-                    <img class="web" src="./img/behance-square-brands.svg" alt="behance">
-                </a>
-                <a title="LinkedIn" href="https://www.linkedin.com/in/wendell-souza-5b13781a3/" target="_blank">
-                    <img class="web" src="./img/linkedin-brands.svg" alt="linkedin">
-                </a>
-            </nav>
-        </header>
-        <main>
-            <aside id="list" class="animate-left conteudoPosition box-color lado-esquerdo">
-                <section id="navList">
+        <main class="container">
+            <div class="hamburger">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+            </div>
+            <aside class="sideBar">
+                <nav id="navMenu">
                     <ol id="licoes_aprendidas" class="tituloMenu">
                         <h2>Learned</h2>
                         <a href="#">
@@ -78,40 +72,18 @@
                             <li>Chrome DevTools</li>
                         </a>
                     </ol>
-                    <ul id="licoes_a_aprender" class="tituloMenu">
-                        <h2>For learn</h2>
-                        <a title="Saiba mais" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
-                            <li>JavaScript</li>
-                        </a>
-                        <a title="Saiba mais" href="https://tableless.com.br/entendendo-o-dom-document-object-model/" target="_blank">
-                            <li>DOM</li>
-                        </a>
-                        <a title="Saiba mais" href="https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/Forms" target="_blank">
-                            <li>Forms</li>
-                        </a>
-                        <a title="Saiba mais" href="https://www.w3schools.com/css/css_rwd_intro.asp" target="_blank">
-                            <li>CSS Responsive</li>
-                        </a>
-                        <a title="Saiba mais" href="https://www.w3schools.com/js/js_es5.asp" target="_blank">
-                            <li>E56</li>
-                        </a>
-                        <a title="Saiba mais" href="https://medium.com/javascript-in-plain-english/functional-programming-higher-order-function-hof-aaa46bb444bb" target="_blank">
-                            <li>HOF</li>
-                        </a>
-                        <a title="Saiba mais" href="https://en.wikipedia.org/wiki/Unit_testing" target="_blank">
-                            <li>Unit Tests</li>
-                        </a>
-                        <a title="Saiba mais" href="https://pt-br.reactjs.org/docs/getting-started.html" target="_blank">
-                            <li>React</li>
-                        </a>
-                        <a title="Saiba mais" href="https://nodejs.org/en/docs/" target="_blank">
-                            <li>Node</li>
-                        </a>
-                        <a title="Saiba mais" href="https://www.alura.com.br/artigos/o-que-e-sql#:~:text=SQL%20significa%20Standard%20Query%20Language,SQL%20Server%2C%20entre%20muitos%20outros." target="_blank">
-                            <li>SQL</li>
-                        </a>
-                    </ul>
-                </section>
+                </nav>
+                <nav id="redes">
+                    <a title="GitHub" href="https://github.com/wend3ll-souza" target="_blank">
+                        <img class="web" src="./img/github-alt-brands.svg" alt="gitHub">
+                    </a>
+                    <a title="Behance" href="https://www.behance.net/wend3llsouza" target="_blank">
+                        <img class="web" src="./img/behance-square-brands.svg" alt="behance">
+                    </a>
+                    <a title="LinkedIn" href="https://www.linkedin.com/in/wendell-souza-5b13781a3/" target="_blank">
+                        <img class="web" src="./img/linkedin-brands.svg" alt="linkedin">
+                    </a>
+                </nav>
             </aside>
             <article id="artigo" class="box-color lado-esquerdo conteudoPosition">
                 <section class="artigo-text">
@@ -239,11 +211,6 @@
                     </p>
                 </section>
             </article>
-            <section class="lado-direito conteudoPosition box-color" id="sobreMim">
-                Olá, me chamo Wendell Souza e sou aluno de
-                Desenvolvimento de software na Trybe.
-                Essa página e derivada de um projeto do curso. Seu objetivo é mostrar meus conhecimentos aprendidos até aqui, consolidando-os nesse material. E, além de tudo, mostrar um pouco do que vem pela frente.
-            </section>
             <table id="tabela">
                 <tr id="tituloTabela">
                     <th colspan="2">Blocos Concluídos</th>
@@ -261,33 +228,72 @@
                     <td>Introdução à HTML e CSS</td>
                 </tr>
             </table>
+            <nav id="forLearn">
+                <ul id="licoes_a_aprender" class="tituloMenu">
+                    <h2>For learn</h2>
+                    <a title="Saiba mais" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                        <li>JavaScript</li>
+                    </a>
+                    <a title="Saiba mais" href="https://tableless.com.br/entendendo-o-dom-document-object-model/" target="_blank">
+                        <li>DOM</li>
+                    </a>
+                    <a title="Saiba mais" href="https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/Forms" target="_blank">
+                        <li>Forms</li>
+                    </a>
+                    <a title="Saiba mais" href="https://www.w3schools.com/css/css_rwd_intro.asp" target="_blank">
+                        <li>CSS Responsive</li>
+                    </a>
+                    <a title="Saiba mais" href="https://www.w3schools.com/js/js_es5.asp" target="_blank">
+                        <li>E56</li>
+                    </a>
+                    <a title="Saiba mais" href="https://medium.com/javascript-in-plain-english/functional-programming-higher-order-function-hof-aaa46bb444bb" target="_blank">
+                        <li>HOF</li>
+                    </a>
+                    <a title="Saiba mais" href="https://en.wikipedia.org/wiki/Unit_testing" target="_blank">
+                        <li>Unit Tests</li>
+                    </a>
+                    <a title="Saiba mais" href="https://pt-br.reactjs.org/docs/getting-started.html" target="_blank">
+                        <li>React</li>
+                    </a>
+                    <a title="Saiba mais" href="https://nodejs.org/en/docs/" target="_blank">
+                        <li>Node</li>
+                    </a>
+                    <a title="Saiba mais" href="https://www.alura.com.br/artigos/o-que-e-sql#:~:text=SQL%20significa%20Standard%20Query%20Language,SQL%20Server%2C%20entre%20muitos%20outros." target="_blank">
+                        <li>SQL</li>
+                    </a>
+                </ul>
+            </nav>
+            <img id="minha_foto" src="./img/perfilLinkd.jpg" alt="Foto de perfil">
+            <section id="sobreMim">
+                "Olá, me chamo Wendell Souza e sou aluno de
+                Desenvolvimento de software na Trybe.
+                Essa página e derivada de um projeto do curso. Seu objetivo é mostrar meus conhecimentos aprendidos até aqui, consolidando-os nesse material. E, além de tudo, mostrar um pouco do que vem pela frente."
+            </section>
+
+            <div id="linha"></div>
+
+            <footer id="rodape">
+                <a id="portfolio" title="Saiba mais" href="https://wend3ll-souza.github.io/portfolio-web/" target="_blank">
+                    <img src="./img/android-chrome-192x192.png" alt="logo">
+                </a>
+                <div class="myContact">
+                    <h3>
+                        Email:
+                        <a title="Saiba mais" target="__blank" href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app">wend3llsouza@gmail.com</a>
+                    </h3>
+                    <h3>
+                        LinkedIn:
+                        <a  title="Saiba mais" target="__blank" href="https://www.linkedin.com/in/wendell-souza-5b13781a3/">Wendell Souza</a>
+                    </h3>
+                    <p>
+                        Os icones dessa página foram retirados de
+                        <a href="https://fontawesome.com/" target="_blank" title="Saiba mais">Font Awesome,</a>
+                        <br>
+                        <a href="https://favicon.io/favicon-generator/" target="_blank" title="Saiba mais">Favicon</a>
+                    </p>
+                </div>
+            </footer>
         </main>
-        <footer id="rodape" class="box-color">
-            <a id="portfolio" title="Saiba mais" href="https://wend3ll-souza.github.io/portfolio-web/" target="_blank">
-                <img src="./img/android-chrome-192x192.png" alt="logo">
-            </a>
-            <div class="myContact">
-                <h3>
-                    Email:
-                    <a title="Saiba mais" target="__blank" href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app">wend3llsouza@gmail.com</a>
-                </h3>
-                <h3>
-                    LinkedIn:
-                    <a  title="Saiba mais" target="__blank" href="https://www.linkedin.com/in/wendell-souza-5b13781a3/">Wendell Souza</a>
-                </h3>
-                <p>
-                    Os icones dessa página foram retirados de
-                    <a href="https://fontawesome.com/" target="_blank" title="Saiba mais">Font Awesome,</a>
-                    <br>
-                    <a href="https://favicon.io/favicon-generator/" target="_blank" title="Saiba mais">Favicon</a>
-                </p>
-            </div>
-            <img
-                id="minha_foto"
-                class="box-color"
-                src="./img/perfilLinkd.jpg"
-                alt="Foto de perfil"
-            >
-        </footer>
     </body>
+    <script src="./script.js"></script>
 </html>
