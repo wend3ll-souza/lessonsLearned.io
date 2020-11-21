@@ -7,153 +7,18 @@
 }
 
 body {
-<<<<<<< HEAD
-  background-color: rgb(233, 238, 238);
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
-
-
-/************************* HEADER ***************************/
-
-header {
-  background-color: rgb(12, 11, 11);
-  box-shadow: 0 1px 6px 0 rgb(0, 0, 0);
-  font-size: 20px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  display: flex;
-}
-
-#image-header {
-  width: 40px;
-  height: 37px;
-  margin: .1rem;
-  margin-left: .4rem;
-  cursor: pointer;
-}
-
-header h1 {
-  font-size: 21px;
-  color: rgb(200, 199, 199);
-  position: relative;
-  top: 8px;
-  left: 4%;
-  font-family: monospace;
-}
-
-
-/************** Icon Hamburger e menu retrátil para mobile *****************/
-
-.hamburger {
-  width: 45px;
-  height: 45px;
-  position: fixed;
-  z-index: 10;
-  right: 1rem;
-  top: 0;
-  cursor: pointer;
-}
-
-/****** Linhas do icone antes do click *********/
-.line {
-  background-color: rgb(153, 153, 153);
-  height: 7px;
-  border-radius: 5rem;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-/*********** Linhas após o click *************/
-
-.show-menu .line {
-  background-color: white;
-}
-
-
-
-/****** Menu *******/
-.sideBar {
-  visibility: hidden;
-  position: fixed;
-}
-
-
-
-/******** Menu ao clicar no icone de evento *******/
-.show-menu .sideBar {
-  position: fixed;
-  top: 0;
-  visibility: visible;
-  z-index: 5;
-  width: 100%;
-  height: 100%;
-  background-color: #444d566e;
-  backdrop-filter: blur(8px);
-  color: aliceblue;
-  display: grid;
-  font-size: 90%;
-  font-weight: 600;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
-
-/*********** Artigo **********/
-#artigo {
-  width: 80%;
-  position: relative;
-  top: 5rem;
-  left: 14%;
-}
-
-.artigo-text img {
-  width: 16px;
-=======
   display: grid;
   justify-content: center;
 }
 
 header{
   text-align: center;
->>>>>>> feature/cssResponsive
 }
 
 header img {
   width: 150px;
 }
 
-<<<<<<< HEAD
-
-
-
-.web {
-  background-color: rgb(177, 177, 177);
-  width: 20px;
-  margin: .1rem;
-  margin-left: 3rem;
-  cursor: pointer;
-  border-radius: 1rem;
-  padding: 5px;
-}
-
-.web:hover {
-  background-color: aliceblue;
-}
-
-#redes {
-  position: relative;
-    right: 15%;
-    bottom: 40%;
-=======
 main{
   display: flex;
   flex-flow: column;
@@ -163,7 +28,6 @@ main{
 
 .artigo img{
   width: 30px;
->>>>>>> feature/cssResponsive
 }
 
 footer img{
@@ -173,179 +37,18 @@ footer img{
   margin-right: 30px;
 }
 
-<<<<<<< HEAD
-#tabela {
-  position: relative;
-  height: 11rem;
-  font-size: 16px;
-  border: 1px dashed rgba(0, 0, 0, 0.267);
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.247);
-  top: 10rem;
-  left: 23%;
-}
-
-#tituloTabela {
-  background-color: rgb(32, 39, 37);
-  color: white;
-}
-
-.tabelaInfo {
-  background-color: #e6e5e5;
-}
-
-.tabelaInfo3 {
-  background-color: #e6e5e5;
-
-}
-
-.tituloMenu h2 {
-  color: rgb(6, 26, 31);
-  margin-bottom: .5rem;
-}
-
-#forLearn {
-  position: relative;
-  left: 23%;
-  top: 13rem;
-  background-color: whitesmoke;
-  width: 11rem;
-  height: 18rem;
-=======
 footer{
->>>>>>> feature/cssResponsive
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-  border-radius: 3rem;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.247);
-}
-
-#minha_foto {
-  width: 95px;
-  border-radius: 6rem;
-  top: 23rem;
-  position: relative;
-  left: 3%;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.247);
-}
-
-#sobreMim {
-  position: relative;
-  top: 14rem;
-  width: 61%;
-  left: 37%;
-}
-
-#rodape {
-  font-size: 11px;
-  background-color: #212020;
-=======
   padding: 10px;
   background-color: rgba(197, 197, 197, 0.192);
 }
 
 .links{
->>>>>>> feature/cssResponsive
   display: flex;
 }
 
-<<<<<<< HEAD
-#rodape img {
-  width: 4rem;
-  margin: 1rem;
-}
-
-@media(min-width: 800px) {
-
-  header h1 {
-    font-size: 29px;
-    color: rgb(200, 199, 199);
-    position: relative;
-    top: 2px;
-    left: 17%;
-    font-family: monospace;
-}
-
-#image-header {
-  width: 40px;
-  height: 37px;
-  margin: .1rem;
-  margin-left: 7.4rem;
-  cursor: pointer;
-}
-
-  #forLearn {
-    position: relative;
-    left: 58%;
-    top: 0rem;
-    background-color: whitesmoke;
-    width: 11rem;
-    height: 18rem;
-    display: flex;
-    align-items: center;
-    border-radius: 3rem;
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.247);
-  }
-
-  #tabela {
-    position: relative;
-    height: 11rem;
-    font-size: 16px;
-    border: 1px dashed rgba(0, 0, 0, 0.267);
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.247);
-    top: 14rem;
-    left: 24%;
-  }
-
-  #sobreMim {
-    position: relative;
-    top: 9rem;
-    width: 61%;
-    left: 37%;
-  }
-
-  #minha_foto {
-    width: 95px;
-    border-radius: 6rem;
-    top: 15rem;
-    position: relative;
-    left: 20%;
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.247);
-  }
-
-  #linha {
-    position: relative;
-    background-color: #00000028;
-    width: 100;
-    height: .8px;
-    bottom: 4rem;
-  }
-
-  #rodape {
-    font-size: 18px;
-    background-color: #212020;
-    display: flex;
-    color: white;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 9rem;
-    top: 20rem;
-    position: relative;
-}
-
-.web {
-    background-color: rgb(177, 177, 177);
-    width: 20px;
-    margin: .1rem;
-    margin-left: 3rem;
-    cursor: pointer;
-    border-radius: 1rem;
-    padding: 5px;
-}
-
-}
-=======
 .lista {
   background-color: rgb(226, 241, 241);
   margin-bottom: 20px;
@@ -369,4 +72,3 @@ footer{
 }
 
 
->>>>>>> feature/cssResponsive
