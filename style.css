@@ -1,13 +1,13 @@
-/************************* Configurações Gerais *****************************/
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 * {
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 
-
 body {
+<<<<<<< HEAD
   background-color: rgb(233, 238, 238);
 }
 
@@ -117,13 +117,21 @@ header h1 {
 
 .artigo-text img {
   width: 16px;
+=======
+  display: grid;
+  justify-content: center;
 }
 
-.artigo-text h3 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+header{
+  text-align: center;
+>>>>>>> feature/cssResponsive
 }
 
+header img {
+  width: 150px;
+}
+
+<<<<<<< HEAD
 
 
 
@@ -145,12 +153,27 @@ header h1 {
   position: relative;
     right: 15%;
     bottom: 40%;
+=======
+main{
+  display: flex;
+  flex-flow: column;
+  padding: 50px;
+  max-width: 900px;
 }
 
-#navMenu li {
-  margin-top: .7rem;
+.artigo img{
+  width: 30px;
+>>>>>>> feature/cssResponsive
 }
 
+footer img{
+  width: 70px;
+  height: 100px;
+  border-radius: 6em;
+  margin-right: 30px;
+}
+
+<<<<<<< HEAD
 #tabela {
   position: relative;
   height: 11rem;
@@ -187,8 +210,13 @@ header h1 {
   background-color: whitesmoke;
   width: 11rem;
   height: 18rem;
+=======
+footer{
+>>>>>>> feature/cssResponsive
   display: flex;
+  justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   border-radius: 3rem;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.247);
 }
@@ -212,15 +240,17 @@ header h1 {
 #rodape {
   font-size: 11px;
   background-color: #212020;
-  display: flex;
-  color: white;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 9rem;
-  top: 20rem;
-  position: relative;
+=======
+  padding: 10px;
+  background-color: rgba(197, 197, 197, 0.192);
 }
 
+.links{
+>>>>>>> feature/cssResponsive
+  display: flex;
+}
+
+<<<<<<< HEAD
 #rodape img {
   width: 4rem;
   margin: 1rem;
@@ -315,3 +345,28 @@ header h1 {
 }
 
 }
+=======
+.lista {
+  background-color: rgb(226, 241, 241);
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.artigo p {
+  margin-top: 10px;
+}
+
+.artigo h3 {
+  margin-top: 30px;
+}
+
+@media screen and (min-width:600px){
+  .listContainer{
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+
+>>>>>>> feature/cssResponsive
